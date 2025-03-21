@@ -12,13 +12,14 @@ function exibirTextoNaTela(tag, texto) {
     campo.innerHTML = texto;
 }
 
+function verificarChute() {
+    let chute = parseInt(document.querySelector('input').value);
+    console.log(chute === numeroSecreto);
+}
+
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 100) + 1
 }
 
 let numeroSecreto = gerarNumeroAleatorio()
 console.log(numeroSecreto);
-
-function verificarChute() {
-    console.log('Apertou o botão');
-}
