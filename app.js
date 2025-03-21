@@ -8,6 +8,13 @@
 exibirTextoNaTela('h1', 'Jogo a adivinhação');
 exibirTextoNaTela('p', 'Escolha um número de 1 a 100');
 
+function gerarNumeroAleatorio() {
+    return parseInt(Math.random() * 100) + 1;
+}
+
+let numeroSecreto = gerarNumeroAleatorio();
+console.log(numeroSecreto);
+
 function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
