@@ -24,7 +24,7 @@ function exibirTextoNaTela(tag, texto) {
 function verificarChute() {
     let chute = parseInt(document.querySelector('input').value);
     
-    if(tentativas === 0){
+    if(tentativas === 1){
         exibirTextoNaTela('h1', 'Você não tem mais tentativas');
         exibirTextoNaTela('p', 'Já era! O numero secreto era ' + numeroSecreto);
     } else {
